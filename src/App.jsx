@@ -1,12 +1,12 @@
+import React from 'react';
+import Login from './components/forms/Login';
 
+const App = () => {
+    return (
+        <div>
+            <Login />
+        </div>
+    );
+};
 
-function App() {
-
-  return (
-    <>
-      
-    </>
-  )
-}
-
-export default App
+export default App;
