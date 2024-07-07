@@ -7,8 +7,7 @@ import UserNav from './components/Buyer UI/UserNav';
 const App = () => {
     return (
         <div>
-            {/* <Login /> */}
-            <Signup />
+            <UserNav />
         </div>
     );
 };
