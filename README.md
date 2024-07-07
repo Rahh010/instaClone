@@ -13,7 +13,7 @@ color palette :
 Background Color: #121212 (RGB: 18, 18, 18)
 Primary Text Color: #FFFFFF (RGB: 255, 255, 255)
 Secondary Text Color: #B0B0B0 (RGB: 176, 176, 176)
-Accent Color (e.g., buttons, links): #BB86FC (RGB: 187, 134, 252)
+Accent Color (e.g., buttons, links): #8135df (RGB: 187, 134, 252)
 Highlight Color (e.g., notifications): #03DAC6 (RGB: 3, 218, 198)
 Card Background Color: #1E1E1E (RGB: 30, 30, 30)
 Border Color: #333333 (RGB: 51, 51, 51)
