@@ -1,6 +1,6 @@
 import React from 'react'
 import { GoHomeFill } from "react-icons/go";
-import { FaSearch, FaInstagram, FaFacebookMessenger, FaRegHeart } from "react-icons/fa";
+import { FaSearch, FaInstagram, FaFacebookMessenger, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 
 import "./UserNav.css"  
 
@@ -11,24 +11,28 @@ const UserNav = () => {
       <section className='usernav-list'>
         <ul className='user-ul'>
           <li className='usernav-list-items'>
-            <GoHomeFill size={30} />
+            <GoHomeFill size={25} />
             <p>Home</p>
           </li>
           <li className='usernav-list-items'>
-            <FaSearch size={30}/>
+            <FaSearch size={25}/>
             <p>Search</p> 
           </li>
           <li className='usernav-list-items'>
-            <FaInstagram size={30}/>
+            <FaInstagram size={25}/>
             <p>Reels</p> 
           </li>
           <li className='usernav-list-items'>
-            <FaFacebookMessenger size={30}/>
+            <FaFacebookMessenger size={25}/>
             <p>Message</p> 
           </li>
           <li className='usernav-list-items'>
-            <FaRegHeart size={30}/>
+            <FaRegHeart size={25}/>
             <p>Notification</p> 
+          </li>
+          <li className='usernav-list-items'>
+            <FaShoppingCart size={25}/>
+            <p>Purchase</p> 
           </li>
           <li className='usernav-list-items'>
             <img src="public/proffesinalai.jpg" alt="" className='usernav-profile'/>
