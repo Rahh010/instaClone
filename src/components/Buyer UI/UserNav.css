@@ -49,6 +49,11 @@
     background-color: #333333;
 }
 
+.usernav-list-items:focus{
+    font-weight: 700;
+    background-color: #333333;
+}
+
 
 
 .usernav-profile{
