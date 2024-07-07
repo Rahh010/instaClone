@@ -1,0 +1,43 @@
+.usernav-main{
+    background-color: #121212;
+    color: #FFFFFF;
+    height: 100vh;
+    width: 300px;
+    border-right: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.usernav-main > h2{
+    font-size: 1.5em;
+    width: 80%;
+    padding: 35px 20px 0 20px;
+    text-align: start;
+}
+
+.user-ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.usernav-list{
+    width: 80%;
+    height: 70vh;
+}
+
+.usernav-list-items{
+    list-style: none;
+}
+
+
+.usernav-profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
