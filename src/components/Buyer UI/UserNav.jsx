@@ -11,28 +11,28 @@ const UserNav = () => {
       <section className='usernav-list'>
         <ul className='user-ul'>
           <li className='usernav-list-items'>
-            <GoHomeFill />
-            Home
+            <GoHomeFill size={30} />
+            <p>Home</p>
           </li>
           <li className='usernav-list-items'>
-            <FaSearch />
-            Search
+            <FaSearch size={30}/>
+            <p>Search</p> 
           </li>
           <li className='usernav-list-items'>
-            <FaInstagram />
-            Reels
+            <FaInstagram size={30}/>
+            <p>Reels</p> 
           </li>
           <li className='usernav-list-items'>
-            <FaFacebookMessenger />
-            Message
+            <FaFacebookMessenger size={30}/>
+            <p>Message</p> 
           </li>
           <li className='usernav-list-items'>
-            <FaRegHeart />
-            Notification
+            <FaRegHeart size={30}/>
+            <p>Notification</p> 
           </li>
           <li className='usernav-list-items'>
             <img src="public/proffesinalai.jpg" alt="" className='usernav-profile'/>
-            Profile
+            <p>Profile</p> 
           </li>
         </ul>
       </section>
