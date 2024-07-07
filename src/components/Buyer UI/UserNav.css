@@ -2,19 +2,19 @@
     background-color: #121212;
     color: #FFFFFF;
     height: 100vh;
-    width: 300px;
+    width: 250px;
     border-right: 1px solid #333333;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    /* align-items: center; */
 }
 
 .usernav-main > h2{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;  
     font-size: 1.5em;
-    width: 80%;
-    padding: 35px 20px 0 20px;
-    text-align: start;
+    padding: 40px 20px 10px 20px;
 }
 
 .user-ul{
@@ -38,10 +38,11 @@
     height: 50px;
     display: flex;
     align-items: center;
-    column-gap: 20px;
-    padding: 0 20px;
-    border-radius: 10px;
-    transition: all 1s;
+    column-gap: 15px;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-radius: 8px;
+    transition: all 0.5s;
 }
 
 .usernav-list-items:hover{
@@ -49,15 +50,10 @@
     background-color: #333333;
 }
 
-.usernav-list-items:focus{
-    font-weight: 700;
-    background-color: #333333;
-}
-
 
 
 .usernav-profile{
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
 }
