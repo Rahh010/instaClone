@@ -5,11 +5,18 @@ import Decide from './components/forms/Decide';
 import UserNav from './components/Buyer UI/UserNav';
 import SellerNav from './components/Seller UI/SellerNav';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 const App = () => {
     return (
-        <div>
-            <Login/>
-        </div>
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={ <Login />} />
+                    <Route path='/signup' element={ <Signup />} />
+                </Routes>
+            </BrowserRouter>
+        </>
     );
 };
 

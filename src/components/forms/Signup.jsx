@@ -30,7 +30,7 @@ const Signup = () => {
         <button className='signup-button'>Sign Up</button>
       </div>
       <div className='login-box-alternate'>
-        <p>Have an account? <a href="login" onClick={gotoLogin}>Log in</a></p>
+        <p>Have an account? <a href="#" onClick={gotoLogin}>Log in</a></p>
       </div>
     </section>
   )
