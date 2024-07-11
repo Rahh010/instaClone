@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import Login from './components/forms/Login';
 import Signup from './components/forms/Signup';
 import Decide from './components/forms/Decide';
-import UserNav from './components/Buyer UI/UserNav';
-import SellerNav from './components/Seller UI/SellerNav';
+import BuyerUI from './components/Buyer UI/buyerUI';
 
 const App = () => {
     return (
         <div>
-            <Login/>
+            <BuyerUI/>
         </div>
     );
 };

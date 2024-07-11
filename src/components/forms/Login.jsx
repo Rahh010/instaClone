@@ -4,8 +4,8 @@ import Signup from './Signup';
 import "./Login.css";
 
 const Login = () => {
-  let gotoSignup = () => {
-    ReactDOM.createRoot(document.getElementById('root')).render(
+  const gotoSignup = () => {
+    ReactDOM.createRoot(document.getElementById("root")).render(
       <Signup/>
     )
   }
@@ -21,7 +21,7 @@ const Login = () => {
         <p className='forgot-pw'> <a href=""> Forgot password?</a></p>
       </div>
       <div className='signup-box-alternate'>
-        <p>Don't have an account? <a href="signup" onClick={gotoSignup}>Sign up</a></p>
+        <p>Don't have an account? <a href='#signup' onClick={gotoSignup}>Sign up</a></p>
       </div>
     </section>
   )
