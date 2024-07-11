@@ -10,7 +10,7 @@ const App = () => {
 
     return (
         <>
-            <BrowserRouter>
+            {/* <BrowserRouter>
                 <Routes>
                     <Route path='/' element={ <Login />} />
                     <Route path='/signup' element={ <Signup />} />
@@ -18,7 +18,8 @@ const App = () => {
                     <Route path='/buyerUI' element={<BuyerUI />} />
                     <Route path='/sellerUI' element={<SellerUI/>} />
                 </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */}
+            <BuyerUI />
         </>
     );
 };
