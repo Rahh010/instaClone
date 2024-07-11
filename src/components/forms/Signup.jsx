@@ -2,20 +2,13 @@ import React, { createElement } from 'react';
 import ReactDOM from "react-dom/client";
 import "./Signup.css";
 import Login from './Login';
-// import Decide from './Decide';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
-  let gotoLogin = () => {
-    ReactDOM.createRoot(document.getElementById('root')).render(
-      <Login/>
-    )
+  const navigateToDecide = useNavigate()
+  function onSubmit() {
+    navigateToDecide('/decide')
   }
-
-  // let gotoDecide = () => {
-  //   ReactDOM.createRoot(document.getElementById("root")).render(
-  //     <Decide/>
-  //   )
-  // }
   return (
     <section className='signup-main'>
       <div className='signup-box'>
@@ -27,10 +20,10 @@ const Signup = () => {
           <input type="text" placeholder='Username' />
           <input type="text" placeholder='Password' />          
         </section>
-        <button className='signup-button'>Sign Up</button>
+        <button className='signup-button' onClick={onSubmit}>Sign Up</button>
       </div>
       <div className='login-box-alternate'>
-        <p>Have an account? <a href="login" onClick={gotoLogin}>Log in</a></p>
+        <p>Have an account? <a href="#">Log in</a></p>
       </div>
     </section>
   )

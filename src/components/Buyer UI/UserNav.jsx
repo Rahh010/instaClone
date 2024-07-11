@@ -35,7 +35,7 @@ const UserNav = () => {
             <p>Purchase</p> 
           </li>
           <li className='usernav-list-items'>
-            <img src="public/proffesinalai.jpg" alt="" className='usernav-profile'/>
+            <img src="proffesinalai.jpg" alt="" className='usernav-profile'/>
             <p>Profile</p> 
           </li>
         </ul>
