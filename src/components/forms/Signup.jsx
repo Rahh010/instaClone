@@ -2,7 +2,7 @@ import React, { createElement } from 'react';
 import ReactDOM from "react-dom/client";
 import "./Signup.css";
 import Login from './Login';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 const Signup = () => {
   const navigateToDecide = useNavigate()
@@ -23,7 +23,7 @@ const Signup = () => {
         <button className='signup-button' onClick={onSubmit}>Sign Up</button>
       </div>
       <div className='login-box-alternate'>
-        <p>Have an account? <a href="#">Log in</a></p>
+        <p>Have an account? <Link to="/">Log in</Link></p>
       </div>
     </section>
   )
