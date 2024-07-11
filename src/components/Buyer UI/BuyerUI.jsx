@@ -1,16 +1,16 @@
 import React from "react";
 import MsgMain from "./MsgMain";
 import UserNav from "./UserNav";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+// import "./BuyerUI.css";
 
 const BuyerUI = () => {
     return (
         <>
-        <div>
+        <div className="constantNav">
             <UserNav />
         </div>
-        <div>
-            
+        <div className="changeable">
+            < MsgMain/> 
         </div>
         </>
     )
