@@ -1,10 +1,14 @@
 import React from 'react'
 import { GoHomeFill } from "react-icons/go";
 import { FaSearch, FaInstagram, FaFacebookMessenger, FaRegHeart, FaShoppingCart } from "react-icons/fa";
-
-import "./UserNav.css"  
+import {useNavigate} from "react-router-dom";
+import "./UserNav.css";
 
 const UserNav = () => {
+  const pageNavgation = useNavigate();
+  let messages = () => {
+    pageNavgation("messages");
+  }
   return (
     <section className='usernav-main'>
       <h2>Instakart</h2>
@@ -24,7 +28,7 @@ const UserNav = () => {
           </li>
           <li className='usernav-list-items'>
             <FaFacebookMessenger size={25}/>
-            <p>Message</p> 
+            <p onClick={messages}>Message</p> 
           </li>
           <li className='usernav-list-items'>
             <FaRegHeart size={25}/>
