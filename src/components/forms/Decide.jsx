@@ -1,21 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import BuyerUI from "../Buyer UI/BuyerUI";
-// import SellerUI from "../Seller UI/SellerUI";
 import "./Decide.css";
 
 const Decide = () => {
-  // let buyerUI = () => {
-  //   ReactDOM.createRoot(document.getElementById("root")).render(
-  //     <BuyerUI/>
-  //   )
-  // }
-
-  // let sellerUI = () => {
-  //   ReactDOM.createRoot(document.getElementById("root")).render(
-  //     <SellerUI/>
-  //   )
-  // }
   return (
     <section className='decide-main'>
       <div className='decide-box'>
