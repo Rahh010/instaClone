@@ -1,5 +1,10 @@
 .constantNav {
-    width: 280px;
+    width: 250px;
     height: 100vh;
-    background-color: rgb(62, 85, 105);
+}
+
+.changeable {
+    height: 100vh;
+    width: fit-content;
+    color: aliceblue;
 }

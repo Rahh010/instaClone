@@ -1,16 +1,19 @@
 import React from "react";
 import MsgMain from "./MsgMain";
 import UserNav from "./UserNav";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
+import "./BuyerUI.css";
 
 const BuyerUI = () => {
     return (
         <>
-        <div>
+        <div className="constantNav">
             <UserNav />
         </div>
-        <div>
-            
+        <div className="changeable">
+            <Routes>
+                < Route path="messages" element={MsgMain}/>            
+            </Routes> 
         </div>
         </>
     )
