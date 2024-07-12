@@ -1,9 +1,10 @@
 import React from 'react'
+import './HomePost.css'
 
 const HomePost = () => {
   return (
-    <div>
-      
+    <div className='home-post-main'>
+      sgfsfg
     </div>
   )
 }

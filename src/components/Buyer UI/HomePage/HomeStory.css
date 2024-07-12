@@ -1,5 +1,51 @@
 .home-story-main{
-    height: 50px;
-    width: 50px;
-    background-color: aliceblue;
+    height: 120px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-story-main > ul{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.story-list{
+    padding-top: 10px;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.story-list > p{
+    font-size: .8em;
+}
+
+.story-list > div {
+    height: 70px;
+    width: 70px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.story-list > div > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1.5px solid #121212;
 }
