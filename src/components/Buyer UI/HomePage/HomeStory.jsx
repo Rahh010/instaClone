@@ -2,6 +2,8 @@ import React from 'react'
 import './HomeStory.css'
 import { storyInfo } from './HomeConstant'
 import { useState } from 'react'
+import { MdOutlineNavigateNext } from "react-icons/md";
+import { GrFormPrevious } from "react-icons/gr";
 
 const HomeStory = () => {
 
@@ -21,7 +23,7 @@ const HomeStory = () => {
 
   return (
     <div className='home-story-main'>
-      <button onClick={handlePre}>pre</button>
+      <button onClick={handlePre} className='n-p-btn'><GrFormPrevious size={20}/></button>
       <ul >
         {storyInfo.map((item, index) => (
           <li key={index} className='story-list' style={{transform: `translateX(${`-${currInd * 85}px`})`}}>
@@ -32,7 +34,7 @@ const HomeStory = () => {
             </li>
         ))}
       </ul>
-      <button onClick={handleNext}>next</button>
+      <button onClick={handleNext} className='n-p-btn'><MdOutlineNavigateNext size={20} /></button>
     </div>
   )
 }

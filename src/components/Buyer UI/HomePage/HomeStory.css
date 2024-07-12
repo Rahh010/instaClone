@@ -3,6 +3,7 @@
     width: 1000px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .home-story-main > ul{
@@ -48,4 +49,16 @@
     height: 70px;
     border-radius: 50%;
     border: 1.5px solid #121212;
+}
+
+.n-p-btn{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #333333;
+    margin: 0 10px;
 }
