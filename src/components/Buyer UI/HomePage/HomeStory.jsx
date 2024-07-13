@@ -1,7 +1,7 @@
-import React from 'react'
-import './HomeStory.css'
-import { storyInfo } from './HomeConstant'
-import { useState } from 'react'
+import React from 'react';
+import './HomeStory.css';
+import { storyInfo } from './HomeConstant';
+import { useState } from 'react';
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 
@@ -14,7 +14,6 @@ const HomeStory = () => {
     }
     console.log(currInd)
     console.log(storyInfo.length - 6)
-
   }
 
   const handlePre = () => {
@@ -26,7 +25,10 @@ const HomeStory = () => {
       <button onClick={handlePre} className='n-p-btn'><GrFormPrevious size={20}/></button>
       <ul >
         {storyInfo.map((item, index) => (
-          <li key={index} className='story-list' style={{transform: `translateX(${`-${currInd * 85}px`})`}}>
+          <li key={index} className='story-list' style={
+            {transform: `translateX(${`-${currInd * 85}px`})`,
+            transition: 'transform .5s ease-in-out'
+          }}>
                 <div>
                   <img src={item.profileSRC} alt="Profile Photo" />
                 </div>

@@ -4,7 +4,11 @@ import './HomePost.css'
 const HomePost = () => {
   return (
     <div className='home-post-main'>
-      sgfsfg
+      <div>
+        profile
+        username
+        
+      </div>
     </div>
   )
 }
