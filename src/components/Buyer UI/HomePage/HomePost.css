@@ -1,5 +1,114 @@
 .home-post-main{
-    width: 300px;
-    height: 400px;
-    background-color: aqua;
+    width: 500px;
+    height: fit-content;
+    font-family: 'Roboto';
+    border-bottom: 1px solid #333333;
+}
+
+.post-head{
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#profile-pic-post{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+#post-username{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#post-time{
+    font-size: .8em;
+    padding: 3px;
+    color: #B0B0B0;
+}
+
+#user-head-details{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+}
+
+#post-img{
+    width: 500px;
+    border-radius: 5px;
+}
+
+#post-icons{
+    height: 45px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#main-icons{
+    width: 90%;
+    display: flex;
+}
+
+
+.comment{
+    transform: scaleX(-1);
+}
+
+#main-icons > #post-icons{
+    padding: 0 10px 0 10px;
+}
+
+#save-icon{
+    justify-self: end;
+}
+
+.post-footer{
+    padding-top: 10px;
+    display: flex;
+    min-height: 40px;
+    max-height: fit-content;
+    font-size: 16px;
+    justify-content: start;
+    align-items: start;
+}
+
+#post-comment{
+    font-size: 14px;
+}
+
+#comment-username{
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.view-comments{
+    color: #B0B0B0;
+}
+
+#comment-input{
+    all: unset;
+    height: 40px;
+    padding: 5px;
+    width: 85%;
+    background: #121212;
+}
+
+#comment-input::placeholder{
+    color: #757575;
+    font-size: 16px;
+}
+
+#comment-btn{
+    all: unset;
+    cursor: pointer;
+    height: 40px;
+    width: 50px;
+    color: #8135df;
+    text-align: center;
+    font-weight: 700;
 }
