@@ -18,7 +18,7 @@ const Login = () => {
       </div>
       <div className='signup-box-alternate'>
           <p>Don't have an account?
-              <Link to='/signup'>Sign up</Link>
+              <Link to='/signup'> Sign up</Link>
           </p>
       </div>
     </section>

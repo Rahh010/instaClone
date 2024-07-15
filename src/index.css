@@ -3,3 +3,9 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+#root{
+    display: flex;
+    background-color: #121212 ;
+    position: relative;
+}

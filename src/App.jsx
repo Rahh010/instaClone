@@ -9,7 +9,6 @@ import MsgMain from './components/Buyer UI/MsgMain';
 
 const App = () => {
 
-    console.log("dsf")
     return (
         <>
             <BrowserRouter>
@@ -17,11 +16,10 @@ const App = () => {
                     <Route path='/' element={ <Login />} />
                     <Route path='/signup' element={ <Signup />} />
                     <Route path='/decide' element={ <Decide />} />
-                    <Route path='/buyerUI' element={<BuyerUI />} >                    
-                        <Route path='messages' element={< MsgMain/>
-                    } />
+                    <Route path='/buyerUI' element={<BuyerUI />} >
+                    
                     </Route>
-                    <Route path='/sellerUI' element={<SellerUI/>} />
+                    <Route path='/sellerUI' element={<><Decide /><SellerUI/></>}/>
                 </Routes>
             </BrowserRouter>
         </>
