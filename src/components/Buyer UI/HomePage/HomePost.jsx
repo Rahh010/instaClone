@@ -1,10 +1,23 @@
 import React from 'react'
 import './HomePost.css'
+import { useState } from 'react';
 import { HiDotsHorizontal } from "react-icons/hi";
-import { FaRegHeart, FaRegComment, FaRegBookmark  } from "react-icons/fa6";
+import { FaRegHeart, FaRegComment, FaRegBookmark, FaHeart  } from "react-icons/fa6";
 import { PiPaperPlaneTiltBold } from "react-icons/pi";
 
 const HomePost = () => {
+  const [likes, setLikes ] = useState(false)
+  const [likeCount, setLikeCount] = useState(0)
+  const handleLike = () => {
+    if (likes) {
+      setLikes(() => !likes)
+      setLikeCount(() => likeCount - 1)
+    } else {
+      setLikes(() => !likes)
+      setLikeCount(() => likeCount + 1)
+    }
+  }
+
   return (
     <div className='home-post-main'>
       <div className='post-head'>
@@ -24,7 +37,14 @@ const HomePost = () => {
       </div>
       <div id='post-icons'>
         <div id='main-icons'>
-          <FaRegHeart size={25} id='post-icons' style={{'paddingLeft': '0px'}} />
+          {
+            likes ?
+            <FaHeart size={25} id='post-icons' color='#FF0000' style={{ 'paddingLeft': '0px' }} onClick={handleLike} />
+            :
+            <FaRegHeart size={25} id='post-icons' style={{ 'paddingLeft': '0px' }} onClick={handleLike} />
+          }
+          
+          
           <FaRegComment size={25} id='post-icons' className='comment' />
           <PiPaperPlaneTiltBold size={25} id='post-icons'/>
         </div>
@@ -33,7 +53,7 @@ const HomePost = () => {
         </div>
       </div>
 
-      <div id='post-username'>5 likes</div>
+      <div id='post-username'>{likeCount} likes</div>
 
       <div className='post-footer'>
         <p id='post-comment'>
