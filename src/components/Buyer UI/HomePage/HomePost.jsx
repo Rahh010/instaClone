@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import './HomePost.css'
+import { useState } from 'react';
 import { HiDotsHorizontal } from "react-icons/hi";
 import { FaRegHeart, FaRegComment, FaRegBookmark  } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";

@@ -12,6 +12,10 @@ const HomeMain = () => {
           <div className='post-area'>
             <HomePost />
             <HomePost />
+            <HomePost />
+            <HomePost />
+            <HomePost />
+            <HomePost />
           </div>
     </div>
   )
