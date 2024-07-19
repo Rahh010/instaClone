@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
 import './HomePost.css'
 import { useState } from 'react';
 import { HiDotsHorizontal } from "react-icons/hi";
