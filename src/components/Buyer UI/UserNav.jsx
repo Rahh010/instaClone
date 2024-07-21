@@ -6,15 +6,18 @@ import "./UserNav.css";
 
 const UserNav = () => {
   const pageNavgation = useNavigate();
-  let messages = () => {
-    pageNavgation("messages");
+  const messages = () => {
+    pageNavgation("/Buyer/messages");
+  }
+  const home = () => {
+    pageNavgation("/Buyer");
   }
   return (
     <section className='usernav-main'>
       <h2>Instakart</h2>
       <section className='usernav-list'>
         <ul className='user-ul'>
-          <li className='usernav-list-items'>
+          <li className='usernav-list-items' onClick={home}>
             <GoHomeFill size={25} />
             <p>Home</p>
           </li>
@@ -26,9 +29,9 @@ const UserNav = () => {
             <FaInstagram size={25}/>
             <p>Reels</p> 
           </li>
-          <li className='usernav-list-items'>
+          <li className='usernav-list-items' onClick={messages}>
             <FaFacebookMessenger size={25}/>
-            <p onClick={messages}>Message</p> 
+            <p >Message</p> 
           </li>
           <li className='usernav-list-items'>
             <FaRegHeart size={25}/>

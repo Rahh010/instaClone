@@ -6,7 +6,7 @@ const Decide = () => {
   const UInavigation = useNavigate();
 
   const BuyerUI = () => {
-    UInavigation("/buyerUI");
+    UInavigation("/buyer");
   }
 
   const SellerUI = () => {

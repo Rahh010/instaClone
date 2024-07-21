@@ -11,7 +11,10 @@ const BuyerUI = () => {
             <UserNav />
         </div>
         <div>
-            <HomeMain />
+            <Routes>
+                <Route path="/" element={ <HomeMain /> }/>
+                <Route path="/messages" element={ <MsgMain /> }/>     
+            </Routes>
         </div>
         </>
     )

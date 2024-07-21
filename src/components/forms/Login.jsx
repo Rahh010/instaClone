@@ -2,7 +2,7 @@ import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/client';
 import Signup from './Signup';
 import "./Login.css";
-import { BrowserRouter, Link, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (

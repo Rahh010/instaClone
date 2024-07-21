@@ -4,7 +4,7 @@ import MsgChats from "./MsgChats";
 let MsgMain = () => {
     return (
         <>
-        <MsgChats />
+            <MsgChats />
         </>
     )
 }
