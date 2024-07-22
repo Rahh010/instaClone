@@ -5,7 +5,6 @@ import Signup from './components/forms/Signup';
 import Decide from './components/forms/Decide';
 import BuyerUI from './components/Buyer UI/BuyerUI';
 import SellerUI from './components/Seller UI/SellerUI';
-import MsgMain from './components/Buyer UI/MsgMain';
 import Profile from './components/CommonComponents/ProfilePage/Profile';
 import UserNav from './components/Buyer UI/UserNav';
 import SellerNav from './components/Seller UI/SellerNav';
