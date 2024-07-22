@@ -1,6 +1,7 @@
 import React from "react";
 import './MsgChats.css'
 import MsgSingle from "./MsgSingle";
+import { MsgList } from "./msg";
 
 let MsgChats = () => {
     return (
@@ -12,6 +13,7 @@ let MsgChats = () => {
                     <p id="req-txt">Requests</p>
                 </div>
                 <section>
+                    <MsgSingle data={MsgList[0].src} />
                     <MsgSingle />
                     <MsgSingle />
                     <MsgSingle />
@@ -19,7 +21,8 @@ let MsgChats = () => {
                     <MsgSingle />
                     <MsgSingle />
                     <MsgSingle />
-
+                    <MsgSingle />
+                    <MsgSingle /> 
                 </section>
             </section>
         </>

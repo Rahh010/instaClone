@@ -1,11 +1,11 @@
 import React from 'react';
-import img from '../assests/proffesinalai.jpg'
+
 import './MsgSingle.css'
 
-const MsgSingle = () => {
+const MsgSingle = (props) => {
   return (
     <div className='msg-single-main'>
-        <img src={img} id='msg-single-profile' />
+        <img src={props.data} id='msg-single-profile' />
         <p id='msg-single-username'>UserName</p>
     </div>
   )
