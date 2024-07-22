@@ -41,4 +41,4 @@ const HomeStory = () => {
   )
 }
 
-export default HomeStory
+export default HomeStory;
