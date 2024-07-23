@@ -1,0 +1,102 @@
+.msg-area-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.msg-area-head{
+    border-bottom:2px solid #333333;
+    background-color: #121212;
+    width: 83%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.msg-area-head > button{
+    all:unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-area-head > p{
+    font-size: 1.3em;
+    margin-left: 30px;
+}
+
+.msg-area{
+    height: calc(100vh - 90px);
+    width: 95%;
+    /* border: 2px solid white; */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the scrollbar */
+.msg-area::-webkit-scrollbar {
+    width: 10px;
+}
+
+.msg-area::-webkit-scrollbar-track {
+    background: #333333;
+    border-radius: 10px;
+}
+
+.msg-area::-webkit-scrollbar-thumb {
+    background-color: #03DAC6;
+    border-radius: 10px;
+
+}
+  
+
+.msg-area-footer{
+    height: 50px;
+    width: 95%;
+    border: 2px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.msg-area-footer > input{
+    all: unset;
+    margin-left: 15px;
+    height: 60%;
+    width: 93%;
+    border: none;
+    background-color: #121212;
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+
+.msg-area-footer > button{
+    all: unset;
+    cursor: pointer;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 60%;
+    background-color: #121212;
+    font-weight: 900;
+    color: #8135df;
+}
+
+.msgs{
+    padding: 20px;
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: #ffffff;
+}

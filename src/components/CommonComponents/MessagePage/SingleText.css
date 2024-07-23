@@ -1,0 +1,27 @@
+.text-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.2em;
+    border-radius: 25px;
+}
+
+#send {
+    background-color: blue;
+    align-self: flex-end;
+}
+
+#received {
+    background-color: #333333;
+    align-self: flex-start; 
+}

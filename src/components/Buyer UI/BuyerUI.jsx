@@ -10,7 +10,7 @@ const BuyerUI = () => {
         <div>
             <Routes>
                 <Route path="/" element={ <HomeMain /> }/>
-                <Route path="/messages" element={ <MsgMain /> }/>     
+                <Route path="/messages/*" element={ <MsgMain /> }/>     
             </Routes>
         </div>
         </>

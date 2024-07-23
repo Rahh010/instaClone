@@ -4,6 +4,7 @@ import MsgSingle from "./MsgSingle";
 import { MsgList } from "./msg";
 
 let MsgChats = () => {
+
     return (
         <>
             <section className="msg-chats-main">
@@ -14,9 +15,8 @@ let MsgChats = () => {
                 </div>
                 <section>
                     { MsgList.map((e, i) => {
-                        return <MsgSingle key={i} data={{src: e.src, name: e.username}} />
+                        return <MsgSingle key={i} data={{id: e.id, src: e.src, name: e.username}} />
                     }) }
-
                 </section>
             </section>
         </>
