@@ -7,9 +7,6 @@ import HomeMain from '../CommonComponents/HomePage/HomeMain'
 const BuyerUI = () => {
     return (
         <>
-        <div className="constantNav">
-            <UserNav />
-        </div>
         <div>
             <Routes>
                 <Route path="/" element={ <HomeMain /> }/>

@@ -13,16 +13,10 @@ let MsgChats = () => {
                     <p id="req-txt">Requests</p>
                 </div>
                 <section>
-                    <MsgSingle data={MsgList[0].src} />
-                    <MsgSingle />
-                    <MsgSingle />
-                    <MsgSingle />
-                    <MsgSingle />
-                    <MsgSingle />
-                    <MsgSingle />
-                    <MsgSingle />
-                    <MsgSingle />
-                    <MsgSingle /> 
+                    { MsgList.map((e, i) => {
+                        return <MsgSingle key={i} data={{src: e.src, name: e.username}} />
+                    }) }
+
                 </section>
             </section>
         </>

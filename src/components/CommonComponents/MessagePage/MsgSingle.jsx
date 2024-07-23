@@ -3,10 +3,11 @@ import React from 'react';
 import './MsgSingle.css'
 
 const MsgSingle = (props) => {
+  const { src, name } = props.data
   return (
     <div className='msg-single-main'>
-        <img src={props.data} id='msg-single-profile' />
-        <p id='msg-single-username'>UserName</p>
+        <img src={src} id='msg-single-profile' />
+        <p id='msg-single-username'>{ name }</p>
     </div>
   )
 }

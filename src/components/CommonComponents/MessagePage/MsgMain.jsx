@@ -1,10 +1,13 @@
 import React from "react";
 import MsgChats from "./MsgChats";
+import './MsgMain.css'
 
 let MsgMain = () => {
     return (
         <>
-            <MsgChats />
+            <section className="msg-main">
+                <MsgChats />
+            </section>
         </>
     )
 }

@@ -1,0 +1,7 @@
+.msg-main{
+    min-height: 100vh;
+    width: calc(99vw - 250px);
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+}
