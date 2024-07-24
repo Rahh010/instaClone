@@ -12,6 +12,9 @@ const UserNav = () => {
   const home = () => {
     pageNavgation("/Buyer");
   }
+  const explore = () => {
+    pageNavgation("/Buyer/explore");
+  }
   return (
     <section className='usernav-main'>
       <h2>Instakart</h2>
@@ -21,7 +24,7 @@ const UserNav = () => {
             <GoHomeFill size={25} />
             <p>Home</p>
           </li>
-          <li className='usernav-list-items'>
+          <li className='usernav-list-items' onClick={explore}>
             <FaSearch size={25}/>
             <p>Search</p> 
           </li>
