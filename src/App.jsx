@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom'
 import Login from './components/forms/Login';
 import Signup from './components/forms/Signup';
 import Decide from './components/forms/Decide';
