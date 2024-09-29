@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Router } from 'react-router-dom'
 import Login from './components/forms/Login';
 import Signup from './components/forms/Signup';
@@ -15,7 +14,7 @@ const App = () => {
                     <Route path='/' element={ <Login />} />
                     <Route path='/signup' element={ <Signup />} />
                     <Route path='/decide' element={ <Decide />} />
-                    <Route path='/buyerUI' element={<BuyerUI />} />
+                    <Route path='/buyer' element={<BuyerUI />} />
                     <Route path='/sellerUI' element={ <SellerUI/> }/>
                 </Routes>
             </BrowserRouter>

@@ -1,5 +1,6 @@
 import React from "react";
 import SellerNav from "./SellerNav";
+import HomeMain from "../Common Component/HomePage/HomeMain";
 
 const SellerUI = () => {
     return (
@@ -8,7 +9,7 @@ const SellerUI = () => {
             <SellerNav />
         </div>
         <div>
-
+            <HomeMain />
         </div>
         </>
     )
