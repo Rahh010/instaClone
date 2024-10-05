@@ -1,0 +1,33 @@
+/* SellerSingleProduct.css */
+.product-card {
+  background-color: #1E1E1E; /* Card background */
+  border: 1px solid #333333; /* Border color */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* Primary text color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.02); /* Hover effect */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.product-name {
+  color: #FFFFFF; /* Primary text color */
+}
+
+.product-category,
+.product-price,
+.product-description {
+  color: #B0B0B0; /* Secondary text color */
+}

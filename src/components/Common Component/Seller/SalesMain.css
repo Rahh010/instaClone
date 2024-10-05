@@ -1,0 +1,38 @@
+/* SalesMain.css */
+.sales-main {
+  background-color: #121212; /* Background color */
+  color: #FFFFFF; /* Primary text color */
+  padding: 20px;
+  margin-left: 550px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.insta-button {
+  background-color: #8135df; /* Accent color */
+  color: #FFFFFF; /* Primary text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.insta-button:hover {
+  background-color: #03DAC6; /* Highlight color on hover */
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-column {
+  width: 48%; /* Make columns responsive */
+}
+

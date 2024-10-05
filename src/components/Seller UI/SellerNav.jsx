@@ -11,6 +11,9 @@ const SellerNav = () => {
   const profile = () => {
     pageNavigation("/seller/profile"); // Adjusted to match the route
   }
+  const sales = () => {
+    pageNavigation("/seller/sales"); // Adjusted to match the route
+  }
   
   return (
     <section className='sellernav-main'>
@@ -37,7 +40,7 @@ const SellerNav = () => {
             <FaRegHeart size={25}/>
             <p>Notification</p> 
           </li>
-          <li className='sellernav-list-items'>
+          <li className='sellernav-list-items' onClick={() => pageNavigation("/seller/sales")}>
             <FaChartLine size={25}/>
             <p>Sales</p> 
           </li>
