@@ -8,6 +8,7 @@
   color: #FFFFFF; /* Primary text color */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s;
+  width: 300px;
 }
 
 .product-card:hover {

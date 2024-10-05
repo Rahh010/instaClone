@@ -1,0 +1,90 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .modal-content {
+    background-color: #1E1E1E; /* Card Background Color */
+    padding: 40px; /* Increased padding for spacious feel */
+    border-radius: 12px; /* Rounded corners */
+    width: 500px; /* Wider modal */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    transition: transform 0.3s ease; /* Smooth animation */
+    position: relative; /* Position relative for absolute positioning of close button */
+  }
+  
+  .modal-content h2 {
+    color: #FFFFFF; /* Primary Text Color */
+    margin-bottom: 20px; /* Increased margin for separation */
+    font-size: 1.8rem; /* Larger title size */
+    text-align: center; /* Center the title */
+  }
+  
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for inputs */
+    margin: 10px 0;
+    border: 1px solid #333333; /* Border Color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #2C2C2C; /* Input Background Color */
+    color: #FFFFFF; /* Primary Text Color */
+    font-size: 1rem; /* Increased font size */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  .product-preview {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for preview */
+    margin-top: 15px; /* Increased margin for separation */
+    object-fit: cover; /* Ensure the image covers its box */
+  }
+  
+  .modal-content button {
+    background-color: #8135df; /* Accent Color */
+    color: #FFFFFF; /* Primary Text Color */
+    border: none;
+    padding: 15px; /* Increased padding for buttons */
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    width: fit-content; /* Full width */
+    margin-top: 15px; /* Increased margin for separation */
+    font-size: 1.1rem; /* Increased font size */
+  }
+  
+  .modal-content button:hover {
+    background-color: #03DAC6; /* Highlight Color */
+  }
+  
+  .close-button {
+    background: transparent;
+    border: none;
+    color: #FFFFFF; /* Primary Text Color */
+    cursor: pointer;
+    font-size: 0.8rem; /* Smaller font size for the close button */
+    position: absolute; /* Position absolute to align it in the corner */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    padding: 0; /* No padding for a compact look */
+    width: 30px; /* Fixed width for a smaller button */
+    height: 30px; /* Fixed height for a smaller button */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    border-radius: 50%; /* Round button */
+  }
+  
+  .close-button:hover {
+    text-decoration: underline; /* Underline effect on hover for clarity */
+  }
+  
