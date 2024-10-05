@@ -10,24 +10,25 @@ const Decide = () => {
   }
 
   const SellerUI = () => {
-    UInavigation("/sellerUI");
+    UInavigation("/seller");
   }
+  
   return (
     <section className='decide-main'>
       <div className='decide-box'>
         <h2 className='instagram'>Instakart</h2>
         <h2 className='heading'>Choose your purpose</h2>
-          <button onClick={BuyerUI}>
-              For Entertainment
-              <p>You can see post, reels and buy products</p>
-          </button>
-          <button onClick={SellerUI}>
-              For Business
-              <p>You can see post, reels and sell products</p>
-          </button>
+        <button onClick={BuyerUI}>
+          For Entertainment
+          <p>You can see posts, reels, and buy products</p>
+        </button>
+        <button onClick={SellerUI}>
+          For Business
+          <p>You can see posts, reels, and sell products</p>
+        </button>
       </div>
     </section>
   )
 }
 
-export default Decide
+export default Decide;

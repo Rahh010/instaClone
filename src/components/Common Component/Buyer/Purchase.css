@@ -1,0 +1,80 @@
+/* Container for the Purchase component with dark background */
+.purchase-main {
+    margin-left: 400px;
+    width: calc(80vw - 250px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #121212; /* Background color */
+    color: #FFFFFF; /* Primary text color */
+  }
+  
+/* Header section with buttons for Products and Order */
+.purchase-header {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; /* Centers buttons vertically */
+    gap: 20px; /* Adds space between buttons */
+    margin-bottom: 20px;
+  }
+  /* Styling for the Products and Order buttons */
+  .header-button {
+    padding: 15px 100px;
+    background-color: #8135df; /* Accent color */
+    color: #FFFFFF; /* Primary text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .header-button:hover {
+    background-color: #03DAC6; /* Highlight color */
+  }
+  
+/* Styling the search bar container */
+.purchase-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take full width of the container */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling the search bar */
+  .search-bar {
+    width: 80%; /* Set a fixed width for the input to make it centered */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2C2C2C; /* Input background color */
+    border: 1px solid #333333; /* Border color */
+    color: #FFFFFF; /* Primary text color */
+    font-size: 16px;
+  }
+  .search-bar::placeholder {
+    color: #757575; /* Placeholder text color */
+  }
+  
+  /* Grid layout for products */
+  .purchase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Each product item box */
+  .product-item {
+    background-color: #1E1E1E; /* Card background color */
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333333; /* Border color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #B0B0B0; /* Secondary text color */
+  }
+  
+  .product-item:hover {
+    background-color: #333333; /* Darker background on hover */
+  }
+  

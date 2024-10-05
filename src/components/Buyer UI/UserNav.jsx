@@ -6,14 +6,14 @@ import "./UserNav.css";
 
 const UserNav = () => {
   const pageNavgation = useNavigate();
-  const messages = () => {
-    pageNavgation("/Buyer/messages");
-  }
   const home = () => {
     pageNavgation("/Buyer");
   }
-  const explore = () => {
-    pageNavgation("/Buyer/explore");
+  const purchase = () => {
+    pageNavgation("/Buyer/Purchase");
+  }
+  const profile = () => {
+    pageNavgation("/Buyer/Profile");
   }
   return (
     <section className='usernav-main'>
@@ -24,7 +24,7 @@ const UserNav = () => {
             <GoHomeFill size={25} />
             <p>Home</p>
           </li>
-          <li className='usernav-list-items' onClick={explore}>
+          <li className='usernav-list-items' >
             <FaSearch size={25}/>
             <p>Search</p> 
           </li>
@@ -32,7 +32,7 @@ const UserNav = () => {
             <FaInstagram size={25}/>
             <p>Reels</p> 
           </li>
-          <li className='usernav-list-items' onClick={messages}>
+          <li className='usernav-list-items' >
             <FaFacebookMessenger size={25}/>
             <p >Message</p> 
           </li>
@@ -40,11 +40,11 @@ const UserNav = () => {
             <FaRegHeart size={25}/>
             <p>Notification</p> 
           </li>
-          <li className='usernav-list-items'>
+          <li className='usernav-list-items' onClick={purchase}>
             <FaShoppingCart size={25}/>
             <p>Purchase</p> 
           </li>
-          <li className='usernav-list-items'>
+          <li className='usernav-list-items' onClick={profile}>
             <img src="proffesinalai.jpg" alt="" className='usernav-profile'/>
             <p>Profile</p> 
           </li>

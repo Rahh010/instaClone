@@ -1,0 +1,25 @@
+.individual-order {
+  background-color: #1E1E1E; /* Dark mode background */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #333333; /* Border color */
+  color: #B0B0B0; /* Secondary text color */
+}
+
+.order-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}

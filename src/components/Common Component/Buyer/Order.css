@@ -1,0 +1,28 @@
+.order-list {
+    padding: 20px;
+    background-color: #121212; /* Dark background for the orders section */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode */
+    color: #B0B0B0; /* Secondary text color */
+  }
+  
+  .order-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* Primary text color for heading */
+  }
+  
+  .order-item {
+    background-color: #1E1E1E; /* Card background color */
+    padding: 10px;
+    border: 1px solid #333333; /* Border color */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between orders */
+    transition: box-shadow 0.3s ease;
+    color: #B0B0B0; /* Secondary text color */
+  }
+  
+  .order-item:hover {
+    box-shadow: 0 4px 15px rgba(3, 218, 198, 0.5); /* Highlight color on hover */
+  }
+  

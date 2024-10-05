@@ -1,0 +1,86 @@
+.product-item {
+    background-color: #1E1E1E; /* Card background color */
+    padding: 20px;
+    border: 1px solid #333333; /* Border color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #B0B0B0; /* Secondary text color */
+    transition: background-color 0.3s;
+    width: 100%; /* Ensure the product item takes full width of its container */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.product-item:hover {
+    background-color: #333333; /* Darker background on hover */
+}
+
+.product-image {
+    width: 100%; /* Use full width of the product item */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #03DAC6; /* Highlight color for price */
+}
+
+.product-description {
+    font-size: 14px;
+    color: #B0B0B0; /* Secondary text color for description */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between the buttons */
+    margin-top: 10px; /* Space above the buttons */
+    width: 100%; /* Make the button container full width */
+}
+
+.btn-primary,
+.btn-secondary {
+    flex: 1; /* Allow buttons to grow and fill the space */
+    margin: 0 5px; /* Space between buttons */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+.btn-primary {
+    background-color: #8135df; /* Accent color for primary button */
+    color: #FFFFFF; /* Primary text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn-primary:hover {
+    background-color: #9b63ff; /* Lighter shade on hover */
+}
+
+.btn-secondary {
+    background-color: #2C2C2C; /* Input background color */
+    color: #B0B0B0; /* Secondary text color */
+    border: 1px solid #333333; /* Border color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Transition effect */
+}
+
+.btn-secondary:hover {
+    background-color: #1E1E1E; /* Darker shade on hover */
+    color: #FFFFFF; /* Change text color on hover */
+}
+
+.product-title {
+    font-size: 20px;
+    color: #FFFFFF; /* Primary text color */
+    margin: 10px 0; /* Spacing around the title */
+  }
+  
+  .product-category {
+    font-size: 14px;
+    color: #B0B0B0; /* Secondary text color for category */
+    margin-bottom: 5px; /* Space below the category */
+  }
+  

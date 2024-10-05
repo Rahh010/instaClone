@@ -1,0 +1,50 @@
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Make sure it appears above other content */
+  }
+  
+  .modal-content {
+    background-color: #1E1E1E; /* Card background color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Limit max width */
+    color: #FFFFFF; /* Primary text color */
+    position: relative; /* Position for the close button */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #FFFFFF; /* Close button color */
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .modal-price {
+    font-size: 18px;
+    color: #03DAC6; /* Highlight color for price */
+  }
+  
+  .modal-description {
+    font-size: 14px;
+    color: #B0B0B0; /* Secondary text color for description */
+  }
+  

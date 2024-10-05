@@ -1,0 +1,67 @@
+/* OrderModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #1E1E1E; /* Card background color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px; /* Width of the modal */
+    color: #FFFFFF; /* White text for better contrast */
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .progress-bar {
+    background: #333333;
+    border-radius: 5px;
+    margin: 15px 0;
+  }
+  
+  .progress {
+    height: 10px;
+    width: 25%; /* Adjust width based on order status */
+    background: green; /* Default status color */
+    border-radius: 5px;
+  }
+  
+  .progress.shipped {
+    width: 50%; /* Shipped status */
+    background: orange; /* Change color as needed */
+  }
+  
+  .progress.out-for-delivery {
+    width: 75%; /* Out for delivery */
+    background: yellow; /* Change color as needed */
+  }
+  
+  .progress.delivered {
+    width: 100%; /* Delivered */
+    background: blue; /* Change color as needed */
+  }
+  
+  .status-labels {
+    display: flex;
+    justify-content: space-between;
+  }
+  

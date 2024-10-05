@@ -1,0 +1,33 @@
+.profile-main {
+    height: 100vh;
+    width: calc(100vw - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212; /* Use your dark mode background color */
+    color: #fff; /* Use your primary text color */
+    margin-left: 250px;
+  }
+  
+  .profile-photo {
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image covers the circle */
+  }
+  
+  .username {
+    margin-top: 10px;
+  }
+  
+  .follower-following {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .posts {
+    margin-top: 20px;
+  }
+  
